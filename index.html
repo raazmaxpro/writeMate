@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WriteMate - AI Content Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1 class="app-title" id="animated-title">WriteMate</h1>
+
+    <div class="form-group">
+      <label for="content-type" class="label">Content Type</label>
+      <select id="content-type">
+        <option value="blog">Blog Post</option>
+        <option value="caption">Instagram Caption</option>
+        <option value="product">Product Description</option>
+        <option value="title">YouTube Title</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="tone" class="label">Tone</label>
+      <select id="tone">
+        <option value="friendly">Friendly</option>
+        <option value="professional">Professional</option>
+        <option value="funny">Witty</option>
+        <option value="empathetic">Empathetic</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="topic" class="label">What do you want to write about?</label>
+      <textarea id="topic" rows="3" placeholder="e.g., Dog food for German Shepherd puppies..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="word-count" class="label">Word Count</label>
+      <select id="word-count">
+        <option value="100">100 words</option>
+        <option value="300">300 words</option>
+        <option value="500">500 words</option>
+      </select>
+    </div>
+      <footer class="footer">
+  Made with <span class="heart">❤️</span> by <span class="name">Raj Sen</span>
+</footer>
+    <button id="generate-btn">✨ Generate Content</button>
+
+    <div id="output-container" class="hidden">
+      <h2>📝 Generated Content</h2>
+      <div id="output-text"></div>
+      <button id="copy-btn">📋 Copy</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
